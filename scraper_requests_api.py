@@ -1,6 +1,6 @@
 """
 The task is to scrape data from:
-https://www.mudah.my/malaysia/motorcycles-for-sale
+https://www.mudah.my/malaysia/cars-for-sale
 
 Though we can scrape data from the page, but under the hood, it will call the the below API:
 https://search.mudah.my/v1/search?category=1020&from=0&include=extra_images%2Cbody&limit=200&type=sell
