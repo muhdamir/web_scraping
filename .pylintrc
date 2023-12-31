@@ -1,0 +1,8 @@
+[MASTER]
+disable=
+    C0114, # missing-module-docstring
+    R0913, # too-many-arguments
+    W0718, # broad-exception-caught
+    C0116, # missing-function-docstring
+    R0903, # too-few-public-methods
+    C0115, # missing-class-docstring

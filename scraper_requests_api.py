@@ -155,4 +155,4 @@ def main(
 
 
 if __name__ == "__main__":
-    main(file_type="csv")
+    main(file_type="pickle")
