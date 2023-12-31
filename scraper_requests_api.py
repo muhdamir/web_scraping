@@ -1,15 +1,15 @@
 """
-The task is to scrape data from:
-https://www.mudah.my/malaysia/cars-for-sale
+📝 The task is to scrape data from: 
+https://www.mudah.my/malaysia/cars-for-sale. 
 
-Though we can scrape data from the page, but under the hood, it will call the the below API:
-https://search.mudah.my/v1/search?category=1020&from=0&include=extra_images%2Cbody&limit=200&type=sell
+📝 Though we can scrape data from the page, under the hood, it will call the API below: 
+https://search.mudah.my/v1/search?category=1020&from=0&include=extra_images%2Cbody&limit=200&type=sell. 
 
-we can inspect the API call in our browser.
-* category=1020 stands for car, if we choose other category, it will give different value
-* from=0 stands for from index 0
-* limit=200 stands for how much we want to get the data, maximum is 200
+📝 We can inspect the API call in our browser. 
 
+🚀 'category=1020' stands for 'car'; if we choose another category, it will give a different value. 
+🚀 'from=0' stands for index 0. 
+🚀 'limit=200' stands for how much data we want to retrieve, with a maximum of 200.
 """
 
 import logging
@@ -155,4 +155,4 @@ def main(
 
 
 if __name__ == "__main__":
-    main(file_type="pickle")
+    main(file_type="csv")
