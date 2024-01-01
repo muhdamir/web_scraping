@@ -1,9 +1,7 @@
 # Web Scraping
-There are two python script available of which each is using different method.
 
 ## Scraping by Inspecting The API Calls from The Browser.
 The aim of this approach is to find the underlying API of the website by inspecting the network tab in the browser.
-
 You can see the implementation of this approach through this script `scraper_requests_api.py`
 
 ## Scraping Straight Away from The Website
