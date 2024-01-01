@@ -183,13 +183,14 @@ def migrate():
         if all_brand:
             session.add_all(all_brand)
             session.commit()
-            for brand in all_brand:
-                session.refresh(brand)
+            # for brand in all_brand:
+            #     session.refresh(brand)
             logger.info("✅  all car brands are up to date")
 
         else:
-            all_brand = session.query(CarBrand).all()
             logger.info("✅  nothing to update for car brands")
+
+        all_brand = session.query(CarBrand).all()
 
         # create model
         logger.info("⚒️  updating car model data...")
@@ -219,13 +220,14 @@ def migrate():
         if all_model:
             session.add_all(all_model)
             session.commit()
-            for model in all_model:
-                session.refresh(model)
+            # for model in all_model:
+            #     session.refresh(model)
             logger.info("✅  all car models are up to date")
 
         else:
-            all_model = session.query(CarModel).all()
             logger.info("✅  nothing to update for car models")
+
+        all_model = session.query(CarModel).all()
 
         # create car
         logger.info("⚒️  updating car info data...")
