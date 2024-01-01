@@ -5,3 +5,5 @@ pandas-stubs==2.1.4.231227
 types-requests==2.31.0.20231231
 lxml==5.0.0
 lxml-stubs==0.4.0
+SQLAlchemy==2.0.24
+mysqlclient==2.2.1

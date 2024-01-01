@@ -1,0 +1,15 @@
+version: '2'
+
+services:
+  mysql:
+    image: mysql:8.0-bullseye
+    ports:
+      - 8083:3306
+    # volumes:
+    #   - ./mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_USER: root
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: dev
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: secret

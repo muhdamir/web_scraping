@@ -114,7 +114,7 @@ def main(
 
     # validate with pydantic
     proper_data = JsonDataModel.model_validate_json(raw_data)
-    data = JsonDataModel.model_dump(proper_data, by_alias=True)
+    data = proper_data.model_dump(by_alias=True)
 
     match file_type:
         case "csv":
@@ -134,10 +134,6 @@ def main(
 
         case _:
             logger.warning("⚠️  wrong argument. Data is not saved")
-
-    # save
-    with open(".hahah.txt", mode="+w", encoding="utf-8") as file:
-        file.write(JsonDataModel.model_dump_json(proper_data, by_alias=True))
 
 
 if __name__ == "__main__":
